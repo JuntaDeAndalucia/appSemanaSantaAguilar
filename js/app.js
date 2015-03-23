@@ -175,10 +175,10 @@ function setIframeSrc(url){
 	$("#mapea").attr("src",url);
 }
 function startLoadUrl(){
-	navigator.notification.activityStart("Cargando...", "Espere mientras carga el mapa");
+	$.mobile.loading( "show",{});
 }
 function stopLoadUrl(){
-	navigator.notification.activityStop();
+	$.mobile.loading( "hide",{});
 }
 function ScaleContentToDevice() {
 	   scroll(0, 0);
