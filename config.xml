@@ -19,7 +19,6 @@
 	<preference name="fullscreen" value="true" />
 	<preference name="SplashScreenDelay" value="10000" />
 	<preference name="AutoHideSplashScreen" value="false" />
-	<preference name="InAppBrowserStorageEnabled" value="true" />
 <!-- PERMISOS -->	
 	<preference name="permissions" value="none"/>	
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
