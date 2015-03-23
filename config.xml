@@ -17,10 +17,13 @@
 	<icon src="resources/icon.png" /><!--Adaptar a resoluciones?-->
 	<preference name="orientation" value="portrait" />
 	<preference name="fullscreen" value="true" />
+	<preference name="SplashScreenDelay" value="10000" />
+	<preference name="AutoHideSplashScreen" value="false" />
 <!-- PERMISOS -->	
 	<preference name="permissions" value="none"/>	
 	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
+	<feature name="http://api.phonegap.com/1.0/file" />
 
 <!-- SPLASH Android -->
 	<gap:splash src="resources/screen.jpg" /> <!--DEFAULT-->
