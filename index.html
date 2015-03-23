@@ -1,16 +1,79 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="msapplication-tap-highlight" content="no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
-    </head>
-    <body>
-        <div id="divMapa">
-	<!-- DUMMY -->
-	</div>
-    </body>
-   
-</html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	    <meta name="format-detection" content="telephone=no" />
+	    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, 
+	    							   minimum-scale=1" />
+	    <link rel="stylesheet" href="css/semana_santa.min.css" />
+  		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+  		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.2.min.css" /> 
+  		<link rel="stylesheet" href="css/app.css?v=1" />
+	    <title>Semana Santa 2015</title>
+	</head>
+	<body>
+		<!-- Página vacía -->
+		<div data-role="page" id="vacia">
+			
+		</div>
+		
+		<!-- Página selección -->
+		<div data-role="page" id="seleccion">
+			<div data-role="header">
+				Recorridos procesiones Semana Santa 2015
+			</div> 
+			<div data-role="content">
+				<div id="groupMunicipios" >
+					<label for="dropMunicipios">Municipio:</label>
+					<select name="dropMunicipios" id="dropMunicipios"></select>
+				</div>
+					<label for="dropDias">Día:</label>
+					<select name="dropDias" id="dropDias"></select>
+					<div id="txtMunicipio"></div>
+			</div>
+			<div data-role="footer" align="center">
+				<input type="button" id="btnMapa" data-theme="c" width="100px" value="Aceptar" />
+			</div>
+		</div>
+		
+		<!-- Página mapa -->
+		<div data-role="page" id="mapa">
+			<div data-role="header">
+				<input type="button" id="btnVolver" data-theme="b" value="Volver" data-inline="true"/>
+				<select name="dropProcesiones" id="dropProcesiones" data-inline="true"></select>
+			</div>
+			<div data-role="content" id="contentMapa">
+				<iframe id="mapea" src=""> </iframe>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script>
+      $(document).on("mobileinit",function() {
+          $.mobile.autoInitializePage = false;
+          if(navigator.userAgent.search(/iphone|ipod|android|windows phone|bb10|playbook|blackberry/i) == -1 ){
+        	 //$.mobile.selectmenu.prototype.options.nativeMenu = false;
+        	 //quitado por problemas renderizando select de páginas ocultas
+          }else{
+        	//es móvil
+          }
+      });
+    </script>
+	<script src="js/jquery.mobile-1.4.1.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="js/jquery.tinysort.min.js"></script>
+	<script src="js/jquery.tinysort.charorder.min.js"></script>
+	<script src="js/app.js?v=1"></script>
+	<script>
+	
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-49555471-2', 'juntadeandalucia.es');
+	  ga('send', 'pageview');
+
+	</script>
+	</script>
+</html>

@@ -1,0 +1,10 @@
+html, body, iframe, #contentMapa { margin:0; padding:0;}
+iframe { display:block; width:100%; height:100%; border:none; }
+.ui-header .ui-btn {margin-left: 8px;}
+.ui-footer .ui-btn {width: 50%;}
+#txtMunicipio {
+	width: 90%;
+	margin: auto;
+	margin-top: 30px;
+	text-align: justify;
+}
