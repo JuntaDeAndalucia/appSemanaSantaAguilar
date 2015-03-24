@@ -1,12 +1,16 @@
-Descripción
+Título (30)
 ===========
+Semana Santa Aguilar
+
+Descripción breve (80)
+======================
+Consulta los itinerarios de la Semana Santa de Aguilar de la Frontera
+
+Descripción completa (4000)
+===========================
 Aplicación desarrollada para la difusión a través de dispositivos móviles de los itinerarios de Semana Santa del municipio de Aguilar de la Frontera; estos itinerarios se han elaborado tomando como base cartográfica el Callejero Digital de Andalucía Unificado y haciendo uso de Mapea. 
 
 La aplicación ha sido desarrollada por la DG de Política Digital usando tecnología del proyecto SIG Corporativo de la Junta de Andalucía.
-
-Descripción breve
-=================
-*******Seman Santa Aguilar*******
 
 Notas de versión
 =================
